@@ -1,0 +1,166 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #1E1E1E;
+    --text-color: black;
+    --task-color: white;
+    --footer-color: #1E1E1E;
+    --theme-btn: url('assets/Dark-theme-btn.svg');
+    --container-bg: url('./assets/Light-empty.svg');
+    --complete-icon: url('assets/complete.svg');
+}
+
+/* Reset default margin and padding */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the container */
+.container_empty {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color); /* Set background color */
+    background-image: var(--container-bg); /* Set background image */
+    color: var(--text-color); /* Set text color */
+    border: 2px solid black; /* Adjust the border properties as needed */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    position: relative; /* Ensure the container is positioned relatively */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    height: 100px; /* Adjust height as needed */
+}
+
+h1 {
+    font-size: 24px;
+    margin-right: 10px;
+    text-align: center; /* Center text inside the h1 element */
+}
+
+.theme_toogle {
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px; /* Optional: Add padding to adjust the position of the button */
+}
+
+.theme_toogle_btn {
+    min-width: 30px;
+    min-height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-image: var(--theme-btn);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: aliceblue;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style the filters */
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--secondary-color); /* Set background color */
+    color: var(--text-color); /* Set text color */
+    cursor: pointer;
+}
+.task_check_btn {
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+    padding: 3px;
+    border: 2px var(--secondary-color) solid;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px grey solid;
+    cursor: pointer;
+}
+
+.task_check_btn:hover {
+    background-image: url('assets/complete.svg');
+}
+
+/* Style the task list */
+.tasks {
+    margin-top: 20px;
+}
+
+.tasks ul {
+    list-style-type: none;
+}
+
+.tasks li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: var(--task-color); /* Set background color */
+    border-radius: 5px;
+}
+
+/* Style the footer */
+footer {
+    margin-top: 500px; /* Push the footer to the bottom */
+}
+
+/* Style the new task input and button */
+#new_task_form {
+    display: flex;
+    align-items: center;
+}
+
+#new_task_input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc; /* Adjust border color */
+    border-radius: 5px;
+}
+
+#new_task_input_btn {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the clear completed button */
+#clearCompletedBtn {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container_empty {
+        padding: 10px;
+    }
+
+    /* Additional styles for smaller screens can be added here */
+}
