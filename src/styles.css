@@ -1,0 +1,332 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imgs/purple.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+nav {
+    background-color: rgba(86, 46, 118, 0.8); 
+    padding: 20px 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: color 0.5s ease;
+}
+
+.button.purple-button a {
+    color: white;
+}
+
+.button.purple-button {
+    background-color: rgba(127, 86, 161, 0.8); 
+}
+
+.button.purple-button:hover {
+    background-color: rgba(200, 164, 230, 0.8); 
+}
+
+a:hover {
+    color: #000000;
+}
+
+section {
+    height: 700px;
+    /* background-color: rgba(220, 197, 197, 0.5); */
+   /* border: solid white 1px; */
+}
+
+.hero {
+    height: 100vh;
+    color: rgba(56, 38, 70, 0.8);
+    font-size: 40px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Added */
+    width: 350px; /* Increased width */
+    height: 600px; /* Increased height */
+}
+
+.project-card:hover {
+    transform: scale(1.1); /* Added */
+}
+
+.game-button {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card h3,
+.project-card p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+footer{
+    height: 300px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 700px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    width: 200px; /* Removed extra space */
+    text-decoration: none;
+}
+
+li:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.hero-area {
+    background-color: rgba(248, 240, 255, 0.8);
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.hero-text {
+    margin-left: 80px;
+}
+
+.button {
+    width: 150px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #5f6bb2;
+}
+
+.button:active{
+    background-color: #1a1f3e;
+    color: #f3eff7;
+}
+
+.socials {
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    margin: 10px;
+}
+
+.social {
+    margin: 10px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    border : 1px solid black;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials svg {
+    width: 50px;
+    height: 50px;
+}
+
+.socials button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.socials button:hover {
+    background-color: #5f6bb2;
+}
+
+.socials button:active {
+    background-color: #1a1f3e;
+    color: #f3eff7;
+}
+
+.gradpic img {
+    width: 750px;
+    height: 500px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-right: 50px;
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.about-me h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #262525;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text {
+        font-size: 30px;
+    }
+
+    .gradpic img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text {
+        font-size: 20px;
+    }
+
+    .gradpic img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 20px;
+        width: 120px;
+        height: 45px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+}
